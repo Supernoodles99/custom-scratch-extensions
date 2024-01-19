@@ -23,9 +23,11 @@ class dumbutils {
 		  	 text: 'is it [YEAR]?',
 			 arguments: {
 			 YEAR: {
-			 		type: Scratch.ArgumentType.NUMBER,
-					defaultValue: 2024
+			 	type: Scratch.ArgumentType.NUMBER,
+				defaultValue: 2024
 				},
+			 }
+		  }
 		  {
 		    opcode: 'divideself',
 		  	 blockType: Scratch.BlockType.REPORTER,
