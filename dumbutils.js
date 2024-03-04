@@ -25,7 +25,7 @@ class dumbutils {
 	   YEAR: {
 		type: Scratch.ArgumentType.NUMBER,
 		defaultValue: 2024
-		 },
+		 }
 	  }
 	},
 	{
@@ -40,7 +40,8 @@ class dumbutils {
 	  }
 	}
       ]
-  };
+  }
+  }
 
   hello() {
     return 'hello world';
@@ -50,14 +51,14 @@ class dumbutils {
 	 let random = Math.floor(Math.random() * 2);
 	 return trueorfalse[random];
   }
-  yearequals(year) {
-  	return year.YEAR === new Date().getFullYear();
+  yearequals(args) {
+  	return args.YEAR === new Date().getFullYear();
   }
-  divideself(num) {
-  	if (num.NUM === 0) {
-  		return "aint no way you gonna break the universe 💀"
+  divideself(args) {
+  	if (args.NUM === 0) {
+  		return "aint no way you gonna break the universe 💀";
 	} else {
-		return 1
+		return args.NUM / args.NUM;
 	}
   }
 }
