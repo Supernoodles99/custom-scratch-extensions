@@ -47,9 +47,7 @@ class dumbutils {
     return 'hello world';
   }
   rpbtof() {
-	 const trueorfalse = [true, false];
-	 let random = Math.floor(Math.random() * 2);
-	 return trueorfalse[random];
+	 return Math.random() >= 0.5;
   }
   yearequals(args) {
   	return args.YEAR === new Date().getFullYear();
