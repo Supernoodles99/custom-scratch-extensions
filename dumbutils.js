@@ -38,6 +38,21 @@ class dumbutils {
 		defaultValue: 1
 		 }
 	  }
+	},
+	{
+	  opcode: 'repeatstring',
+	  blockType: Scratch.BlockType.REPORTER,
+	  text: 'repeat [STR] [NUM] times',
+	  arguments: {
+	    STR: {
+	      type: Scratch.ArgumentType.STRING,
+	      defaultValue: 'hello '
+	    },
+	    NUM: {
+	      type: Scratch.ArgumentType.NUMBER,
+	      defaultValue: 5
+	    }
+	  }
 	}
       ]
   }
@@ -54,6 +69,9 @@ class dumbutils {
 	} else {
 		return args.NUM / args.NUM;
 	}
+  }
+  repeatstring(args) {
+    return args.STR.repeat(args.NUM)
   }
 }
 
