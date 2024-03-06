@@ -53,6 +53,16 @@ class dumbutils {
 	      defaultValue: 5
 	    }
 	  }
+	},
+	{
+	  opcode: 'turntrue',
+	  blockType: Scratch.BlockType.BOOLEAN,
+	  text: 'turn [BOOL] true',
+	  arguments: {
+	    BOOL: {
+	      type: Scratch.ArgumentType.BOOLEAN,
+	    }
+	  }
 	}
       ]
   }
@@ -72,6 +82,9 @@ class dumbutils {
   }
   repeatstring(args) {
     return args.STR.repeat(args.NUM)
+  }
+  turntrue(args) {
+    return true
   }
 }
 
